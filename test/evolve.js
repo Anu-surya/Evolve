@@ -7,7 +7,7 @@ contract('evolve', function(accounts) {
      token = instance;
      return token.totalSupply.call();
     }).then(function(result){
-     assert.equal(result.toNumber(), 100000000000 *(10**18), 'total supply is wrong');
+     assert.equal(result.toNumber(), 100000000 *(10**18), 'total supply is wrong');
     })
   });
   it("should return the balance of token owner", function() {
@@ -16,7 +16,7 @@ contract('evolve', function(accounts) {
       token = instance;
       return token.balanceOf.call(accounts[0]);
     }).then(function(result){
-      assert.equal(result.toNumber(), 100000000000 *(10**18), 'balance is wrong');
+      assert.equal(result.toNumber(), 100000000 *(10**18), 'balance is wrong');
     })
   });
   it("should return the name of the token", function() {
@@ -52,7 +52,7 @@ contract('evolve', function(accounts) {
       token = instance;
       return token.INITIAL_SUPPLY.call();
     }).then(function(result){
-      assert.equal(result.toNumber(), 100000000000 *(10**18), 'Initial supply is wrong');
+      assert.equal(result.toNumber(),100000000*(10**18), 'Initial supply is wrong');
     })
   });
 });

@@ -9,7 +9,8 @@ contract Evolve is PausableToken, MintableToken, BurnableToken {
     string public name = "CHIPS Token";
     string public symbol = "CHIPS";
     uint public decimals = 18;
-    uint public INITIAL_SUPPLY = 100000000000 * (10 ** uint256(decimals));
+
+    uint public INITIAL_SUPPLY = 100000000 * (10 ** uint256(decimals));
 
     constructor() public {
         totalSupply_ = INITIAL_SUPPLY;
