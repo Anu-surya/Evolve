@@ -1,4 +1,4 @@
-const Evolve = artifacts.require("evolve");
+const Evolve = artifacts.require("Evolve");
 
 module.exports = function(deployer) {
     deployer.deploy(Evolve).then(() => {

@@ -1,6 +1,6 @@
-var Token = artifacts.require("evolve");
+var Token = artifacts.require("Evolve");
 
-contract('Evolve', function(accounts) {
+contract('evolve', function(accounts) {
   it("should return the total supply", function() {
     var token;
     return Token.deployed().then(function(instance){
